@@ -1,0 +1,22 @@
+﻿<Window x:Class="Recipes_Menu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Recipes_Menu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=" 250*"/>
+                <ColumnDefinition Width=" 600*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Background="CornflowerBlue" Grid.Column="0">
+                <Button Name="btnHome" Content = "Home" Click="btnHome_Click"/>
+                <Button Name="btnDisplay" Content="Display a recipe" Click="btnDisplay_Click"></Button>
+                <Button Name="btnPieChart" Content = "Show Pie Chart" Click="btnPieChart_Click"></Button>
+                <Button Name="btnExit" Content = "Exit" Click="btnExit_Click"></Button>
+            </StackPanel>
+            <Frame Name="frmContainer" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+        </Grid>
+</Window>
